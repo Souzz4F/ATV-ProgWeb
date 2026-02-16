@@ -4,6 +4,7 @@
 * 1-) Descreva as motivações para o desenvolvimento de aplicações baseadas em internet ?
 
 As principais motivações para o desenvolvimento de aplicações baseadas na internet são:
+   
    -Acessibilidade: podem ser acessadas de qualquer lugar do mundo, bastando ter internet e um navegador.
    
    -Facilidade de atualização: o sistema pode ser atualizado no servidor e todos os usuários já usam a versão nova automaticamente.
