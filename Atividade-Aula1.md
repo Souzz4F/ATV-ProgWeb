@@ -42,17 +42,24 @@ Um servidor de aplicação é responsável por executar a lógica de uma aplica�
 Frontend
 
   É a parte visível do sistema, com a qual o usuário interage. Executa no navegador (client-side). Responsável por:
+  
    -interface (layout, botões, menus)
+   
    -experiência do usuário
+   
    -exibição de dados
      
 
 Backend
 
   É a parte que roda no servidor (server-side). Responsável por:
+  
    -lógica do sistema
+   
    -regras de negócio
+   
    -acesso ao banco de dados
+   
    -autenticação e segurança
 
     
