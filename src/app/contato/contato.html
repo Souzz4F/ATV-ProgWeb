@@ -1,9 +1,21 @@
-<html>
-    <h1>Essa é a pagina de contato</h1>
-
-    <h3>Suporte 24h</h3>
-    <div>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Email:Suporte24h@example.com</p>
-    </div>
-</html>
+<h3>Contato</h3>
+<b>{{ mensagem }}</b>
+<br /><br />
+Preencha o formulário abaixo para entrar em contato conosco:
+<br /><br />
+nome: <input type="text" [(ngModel)]="nome" placeholder="Digite seu nome" name="nome" /><br />
+email: <input type="email" [(ngModel)]="email" placeholder="Digite seu email" name="email" /><br />
+telefone:
+<input type="text" [(ngModel)]="telefone" placeholder="Digite seu telefone" name="telefone" /><br />
+assunto:
+<select [(ngModel)]="titulo">
+  <option value="sugestao">Sugestão</option>
+  <option value="duvida">Dúvida</option>
+  <option value="reclamação">Reclamação</option>
+</select><br />
+mensagem:
+  <textarea row="5" col="80" [(ngModel)]="text" placeholder="Digite sua mensagem" name="mensagemContato"></textarea><br />
+  <br /><br />
+copia:
+<input type="checkbox" [(ngModel)]="copia" name="copia" /> Enviar uma cópia para meu email?<br />
+<button (click)="enviar()">Enviar</button>

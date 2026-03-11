@@ -1,12 +1,33 @@
 <html>
     <h1>Essa é a pagina de cadastro para registrar novos usuários</h1>
     <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha"><br><br>
-        <input type="submit" value="Registrar">
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nomeUsuario" [(ngModel)]="user.nomeUsuario"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email"><br><br>
+        <label for="confirmarEmail">Confirmar Email:</label><br>
+        <input type="email" id="confirmarEmail" name="confirmarEmail" [(ngModel)]="user.confirmarEmail"><br><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" [(ngModel)]="user.senha"><br><br>
+        <label for="confirmarSenha">Confirmar Senha:</label><br>
+        <input type="password" id="confirmarSenha" name="confirmarSenha" [(ngModel)]="user.confirmarSenha"><br><br>
+        <label for="sexo">Sexo</label><br>  
+        <select id="sexo" name="sexoUsuario" [(ngModel)]="user.sexoUsuario">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        <label for="orientacaoSexual">Orientação Sexual</label><br> 
+        <select id="orientacaoSexual" name="orientacaoSexual" [(ngModel)]="user.orientacaoSexual">
+            <option value="heterosexual">Heterosexual</option>
+            <option value="homosexual">Homosexual</option>
+            <option value="bisexual">Bisexual</option>
+            <option value="pansexual">Pansexual</option>
+            <option value="assexual">Assexual</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        <button (click)="cadastrar()">
+            Registrar
+        </button>
     </form>
 </html>
